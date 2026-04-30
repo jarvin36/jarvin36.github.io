@@ -1,9 +1,0 @@
-.large-link  {
-        font-size: 1.5em;
-    }
-
-@media (max-width: 768px) {
-  .large-link {
-    font-size: 2rem;
-  }
-}
