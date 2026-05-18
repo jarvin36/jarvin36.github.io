@@ -10,5 +10,17 @@
     <h1>
     <a href="iOS-screen-time-exploits">iOS screen time exploits</a>
     </h1>
+    <div id="visit-counter">Thise site has been loaded <span id="count">0</span> times.</div>
+
+<script>
+  fetch('https://api.countapi.xyz/hit/jarvin36/homepage-visits')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('count').textContent = data.value;
+    })
+    .catch(err => console.log('Counter failed:', err));
+</script>
+
 </header>
 </body>
+
